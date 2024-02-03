@@ -1,0 +1,453 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-style: initial;
+    color: white;
+    background-color: rgb(147, 19, 19);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 72px;
+    background-color: rgb(201, 29, 198);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 20px;
+    overflow: hidden;
+    color:white;
+    
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+.navbar a{
+    display: inline-block;
+    margin-left:35px ;
+    transition: .3s;
+    color: rgb(244, 240, 240);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+
+
+}
+.navbar a:hover{
+    color: aqua;
+}
+.home{
+    
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(24, 24, 70);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10px 0px;
+    
+    
+}
+.home-content{
+    margin: 9px 100px;
+    max-width: 600px;
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+
+    
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+
+}
+.home-content p{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.img{
+    border: 38px;
+    box-shadow: 2px 2px 3px 3px whitesmoke;
+    border-style: double;
+    margin-right: 209px;
+    border-radius: 82px;
+}
+.img:hover{
+    border-color: pink;
+    margin-bottom: 3px;
+    margin-left: 4px;
+}
+.btn{
+    background-color:aqua;
+    border: none;
+    margin: 6px -15px;
+    padding: 3px 13px;
+    font-size: 16px;
+    color: #181616;
+    border-radius: 40px;
+    font-weight: 400;
+}
+.btn:hover{
+font-size: 15px;
+color: aqua;
+background-color: black;
+}
+.text{
+    color: rgb(125, 80, 80);
+}
+.about{
+    display: flex;
+    padding: 132px 69px;
+    margin: 49px 23px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 316px;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.about-img img{
+    padding: 70px 25px;
+    max-width: 868px;
+    height: auto;
+    border-radius: 200px;
+    width: 537px;
+    
+}
+.about-text{
+    margin: 23px 23px;
+    padding: 27px 1px;
+}
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+     color: rgb(12, 173, 119);
+
+}
+.about-text h4{
+    font-size: 30px;
+    font-weight: 600;
+    color: bisque;
+    line-height: 1.7;
+    margin:15px 0 30px;
+
+}
+.about-text p{
+    color: blanchedalmond;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+
+}
+.SKILLS{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-title{
+    margin: -197px 531px;
+    font-size: 50px;
+    padding: 23px 23px;
+    align-items: center;
+    justify-content: center;
+}
+.sub-title span{
+    color: aqua;
+}
+.container{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness:5px ;
+    padding: 23px 23px;
+    margin: -95px 544px;
+}
+.bar{
+    font-size:23px ;
+    align-items: center;
+    justify-content: center;
+}
+.Technical-bars {
+    margin: 149px 194px;
+    padding: 10px 23px;
+    font-size: 30px;
+}
+
+.Technical-bars .bar:first-child{
+margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-bars .bar .info {
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+.Technical-bars .bar .info span{
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 1;
+    animation: showtext 0.5s 1s linear forwards;
+}
+.Technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #181616;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    
+
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+
+    }
+}
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: rgb(14, 198, 140);
+    position: absolute;
+    border-radius: 10px;
+    animation: animateChild  1s cubic-bezier(1,0,0.5,1 ) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+@keyframes animateChild {
+    100%{
+        transform: scaleX(1);
+
+    }
+}
+ .Technical-bars  .bar .progress-line.html span{
+
+width: 80%;
+}
+.Technical-bars  .bar .progress-line.css span{
+    
+    width: 60%;
+    }
+.Technical-bars  .bar .progress-line.js span{
+    
+        width: 40%;
+        }    
+.Technical-bars  .bar .progress-line.python span{
+    
+            width: 50%;
+            }
+.Technical-bars  .bar .progress-line.CPP span{
+    
+                width: 90%;
+                }
+
+.Technical-bars  .bar .progress-line span::after{
+    
+                    position: absolute;
+                    padding: 1px 8px;
+                    background-color: #181616;
+                    color: aliceblue;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    top: -28px;
+                    right: -20px;
+                    animation: showtext 2.5s 1.5s linear forwards;
+                    opacity: 0;
+
+                    }
+.progress-line.html span::after{
+    content: "80%";
+}
+.progress-line.css span::after{
+    content: "60%";
+}
+.progress-line.js span::after{
+    content: "40%";
+}
+.progress-line.python span::after{
+    content: "50%";
+    font-size: 30px;
+}
+.progress-line.CPP span::after{
+    content: "90%";
+}
+.progress-line span::before{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width:0 ;
+    animation: showtext 0.5s 1.5s linear forwards ;
+    opacity: 1;
+    font-size: 20px;
+}
+@keyframes showtext {
+    100%{
+        opacity: 1;
+    }
+}
+
+.main-text{
+    padding-top: 23px ;
+    margin-top: -615px;
+    
+
+}
+.main-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    margin: 97px 485px;
+    padding: 23px 23px;
+
+}
+.main-text h2 span{
+    color: aqua;
+}
+.portfolio-content {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    
+    padding: 20px 16px;
+   
+}
+
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img{
+width: 100%;
+    border-radius: 8px;
+    display: flex;
+    transition: transform 0.5s;
+    padding: 20px 16px;
+}
+
+.layers{
+    width: 100%;
+    height: 0;
+    background-color: rgb(90, 182, 110);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+    .layers:hover{
+        padding: 100px 24px;
+    }
+.layers h5{
+color: #ede2e2;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 15px;
+}
+.layers p{
+    color: #000;
+    font-size: 10px;
+    line-height: 1;
+
+}
+.layers i{
+    color: aqua;
+    margin-top: 25px;
+    font-size: 20px;
+    background-color: #ede2e2;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1.1);
+     
+}
+.row:hover img{
+    height: 100%;
+ 
+}
+.contact{
+    align-items: center;
+    justify-content: center;
+   
+}
+.contact h2{
+    padding: 71px 612px;
+    margin: 40px 33px;
+    font-size: 50px;
+}
+.contact h2 span{
+    color: aqua;
+}
+.location{
+    gap: 10px;
+    padding: 23px 23px;
+    margin: 23px 23px;
+}
+.location h4{
+    margin: -88px 642px;
+    font-size: 30px;
+    padding: 2px 52px;
+    text-decoration: underline rgb(2, 203, 46);
+}
+.location iframe{
+    padding: 59px 82px;
+    align-items: center;
+    margin: 41px 443px;
+}
+.mobile h3{
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px;
+    margin:38px 653px;
+    font-size: 34px;
+    text-decoration: underline aquamarine;
+        
+}
+.mobile h6 h5{
+    margin:38px 653px;
+    padding: 34px 45px;
+    line-height: 1;
+    color: gray;
+}
